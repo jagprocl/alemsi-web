@@ -1,0 +1,26 @@
+.section-container {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 150px 0px;
+
+  .section {
+    width: 90%;
+    max-width: 1640px;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #13457d;
+
+    .header {
+      width: 100%;
+      padding: 60px 0px;
+
+      .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .description {
+        opacity: 80%;
+      }
+    }
+  }
+}

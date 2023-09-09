@@ -1,0 +1,9 @@
+.about-container {
+  display: flex;
+  height: 800px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+  }
+}

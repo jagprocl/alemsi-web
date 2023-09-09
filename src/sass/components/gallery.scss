@@ -1,0 +1,55 @@
+.gallery-right {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 50%;
+
+  .image-container {
+    background-size: auto 120%;
+    background-position: center;
+    height: 560px;
+    width: 50%;
+    margin-left: 20px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    overflow-x: hidden;
+    &:hover {
+      width: 80%;
+    }
+    &:last-child {
+      background-color: #43cad2;
+      border-radius: 20px 0px 0px 20px;
+      width: 100%;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}
+.gallery-left {
+  display: flex;
+  left: 0;
+  width: 50%;
+
+  .image-container {
+    background-size: auto 120%;
+    background-position: center;
+    height: 560px;
+    width: 50%;
+    margin-left: 20px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    overflow-x: hidden;
+    &:hover {
+      width: 80%;
+    }
+    &:first-child {
+      background-color: #43cad2;
+      border-radius: 0px 20px 20px 0px;
+      width: 100%;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}
