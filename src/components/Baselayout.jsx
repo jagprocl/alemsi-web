@@ -5,10 +5,11 @@ import Banner from './Banner.jsx';
 import Grid from './Grid.jsx';
 import SectionLayout from './SectionLayout';
 import ServiceGrid from './ServiceGrid';
-import ProductCard from './ProductCard';
 import ProductGrid from './ProductGrid';
 import LogoGrid from './LogoGrid';
 import About from './About';
+import Human from './Human';
+import TwoWorkers from './TwoWorkers';
 
 const BaseLayout = (props) => {
   return (
@@ -17,6 +18,7 @@ const BaseLayout = (props) => {
       <Hero></Hero>
       <Banner></Banner>
       <About></About>
+      <Human></Human>
       <Grid></Grid>
       <SectionLayout
         description='Estamos constantemente ampliando nuestros servicios para brindarte una gran variedad de soluciones de higiene.'
@@ -72,6 +74,7 @@ const BaseLayout = (props) => {
       >
         <ProductGrid></ProductGrid>
       </SectionLayout>
+      <TwoWorkers></TwoWorkers>
     </>
   );
 };

@@ -4,52 +4,93 @@
   right: 0;
   width: 50%;
 
-  .image-container {
+  .image-container-01,
+  .image-container-02 {
     background-size: auto 120%;
     background-position: center;
     height: 560px;
-    width: 50%;
+    width: 100%;
     margin-left: 20px;
     border-radius: 20px;
     transition: 0.3s ease;
     overflow-x: hidden;
+
     &:hover {
-      width: 80%;
+      width: 120%;
     }
-    &:last-child {
-      background-color: #43cad2;
-      border-radius: 20px 0px 0px 20px;
-      width: 100%;
-      &:hover {
-        width: 100%;
-      }
+  }
+  .image-container-01 {
+    animation: change 20s infinite ease-in-out;
+  }
+  .image-container-02 {
+    animation: change02 20s infinite ease-in-out;
+  }
+  .right-shape {
+    background-color: #43cad2;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  @keyframes change {
+    0% {
+      background-image: url('../assets/gallery/photo-01.jpg');
+    }
+    33% {
+      background-image: url('../assets/gallery/photo-02.jpg');
+    }
+    66% {
+      background-image: url('../assets/gallery/photo-03.jpg');
+    }
+    100% {
+      background-image: url('../assets/gallery/photo-01.jpg');
+    }
+  }
+
+  @keyframes change02 {
+    0% {
+      background-image: url('../assets/gallery/photo-04.jpg');
+    }
+    33% {
+      background-image: url('../assets/gallery/photo-05.jpg');
+    }
+    66% {
+      background-image: url('../assets/gallery/photo-06.jpg');
+    }
+    100% {
+      background-image: url('../assets/gallery/photo-04.jpg');
     }
   }
 }
+
 .gallery-left {
   display: flex;
   left: 0;
   width: 50%;
 
-  .image-container {
+  .left-shape {
+    background-color: #ecf4fc;
+    border-radius: 0px 20px 20px 0px;
+    width: 100%;
+  }
+
+  .image-container-01,
+  .image-container-02 {
     background-size: auto 120%;
     background-position: center;
-    height: 560px;
-    width: 50%;
+    width: 100%;
     margin-left: 20px;
     border-radius: 20px;
     transition: 0.3s ease;
     overflow-x: hidden;
     &:hover {
-      width: 80%;
+      width: 120%;
     }
-    &:first-child {
-      background-color: #43cad2;
-      border-radius: 0px 20px 20px 0px;
-      width: 100%;
-      &:hover {
-        width: 100%;
-      }
-    }
+  }
+  .image-container-01 {
+    background-image: url('../assets/gallery/photo-07.jpg');
+  }
+  .image-container-02 {
+    background-image: url('../assets/gallery/photo-02.jpg');
   }
 }
