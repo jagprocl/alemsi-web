@@ -29,3 +29,7 @@
 .icon-arrow-right2:before {
   content: '\ea3c';
 }
+
+.icon-whatsapp:before {
+  content: '\ea93';
+}

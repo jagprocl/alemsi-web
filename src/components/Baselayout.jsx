@@ -10,6 +10,7 @@ import LogoGrid from './LogoGrid';
 import About from './About';
 import Human from './Human';
 import TwoWorkers from './TwoWorkers';
+import Schedule from './Schedule';
 
 const BaseLayout = (props) => {
   return (
@@ -75,6 +76,39 @@ const BaseLayout = (props) => {
         <ProductGrid></ProductGrid>
       </SectionLayout>
       <TwoWorkers></TwoWorkers>
+      <SectionLayout
+        color='#F8FAFC'
+        title={
+          <>
+            <span>
+              Agenda tu servicio{' '}
+              <span style={{ fontWeight: '600' }}>ahora </span>
+              en unos cuantos click
+            </span>
+          </>
+        }
+        description={
+          <>
+            <span>
+              Completa este formulario para agendar alguno de nuestros servicios
+            </span>
+          </>
+        }
+      ></SectionLayout>
+      <Schedule></Schedule>
+      <SectionLayout
+        color='#ffffff'
+        align='center'
+        title='Seguimos pendiente de ti'
+        description={
+          <>
+            <span>
+              Nos preocupamos de que tu experiencia con nosotros sea buena de
+              principio a fin
+            </span>
+          </>
+        }
+      ></SectionLayout>
     </>
   );
 };
