@@ -6,16 +6,18 @@ const SectionLayout = ({
   children,
   color,
   align,
+  pad,
 } = defaultProps) => {
   const centerAlign = {
     textAlign: align,
   };
-  const Background = {
+  const BackgroundPadding = {
     backgroundColor: color,
+    padding: pad,
   };
   return (
     <>
-      <div className='section-container' style={Background}>
+      <div className='section-container' style={BackgroundPadding}>
         <div className='section'>
           <div className='header'>
             <h1 className='title' style={centerAlign}>

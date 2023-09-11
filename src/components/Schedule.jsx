@@ -6,7 +6,7 @@ const Schedule = () => {
     <>
       <div className='schedule-container'>
         <div className='schedule-content'>
-          <div className='schedule-component'></div>
+          <div className='schedule-component'>Aquí iria tu componente</div>
           <div className='whatsapp-tip'>
             <div className='left-section'>
               <h1>¿Necesitas asistencia para agendar tu servicio?</h1>
@@ -19,7 +19,7 @@ const Schedule = () => {
                       className='icon-whatsapp'
                       style={{
                         color: '#13457D',
-                        marginRight: '16px',
+                        marginRight: '8px',
                         fontSize: '20px',
                         position: 'relative',
                         top: '2px',

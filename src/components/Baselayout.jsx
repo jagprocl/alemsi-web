@@ -11,6 +11,7 @@ import About from './About';
 import Human from './Human';
 import TwoWorkers from './TwoWorkers';
 import Schedule from './Schedule';
+import PostSale from './PostSale';
 
 const BaseLayout = (props) => {
   return (
@@ -94,9 +95,12 @@ const BaseLayout = (props) => {
             </span>
           </>
         }
-      ></SectionLayout>
-      <Schedule></Schedule>
+      >
+        <Schedule></Schedule>
+      </SectionLayout>
+
       <SectionLayout
+        pad='80px 0px'
         color='#ffffff'
         align='center'
         title='Seguimos pendiente de ti'
@@ -108,7 +112,9 @@ const BaseLayout = (props) => {
             </span>
           </>
         }
-      ></SectionLayout>
+      >
+        <PostSale></PostSale>
+      </SectionLayout>
     </>
   );
 };

@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?ddtr97');
-  src: url('fonts/icomoon.eot?ddtr97#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ddtr97') format('truetype'),
-    url('fonts/icomoon.woff?ddtr97') format('woff'),
-    url('fonts/icomoon.svg?ddtr97#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?d0uor7');
+  src:  url('fonts/icomoon.eot?d0uor7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?d0uor7') format('truetype'),
+    url('fonts/icomoon.woff?d0uor7') format('woff'),
+    url('fonts/icomoon.svg?d0uor7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,10 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-right2:before {
-  content: '\ea3c';
+.icon-clock:before {
+  content: "\e900";
 }
-
+.icon-headphones:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
 .icon-whatsapp:before {
-  content: '\ea93';
+  content: "\e904";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
