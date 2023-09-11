@@ -57,6 +57,7 @@ const BaseLayout = (props) => {
         <LogoGrid></LogoGrid>
       </SectionLayout>
       <SectionLayout
+        pad='150px 0px 0px 0px'
         color='#13457D'
         title={
           <>
